@@ -1,0 +1,27 @@
+[user]
+  email = drupal@davidstoline.com
+  name = David Stoline
+
+[color]
+  diff = auto
+  branch = auto
+  status = auto
+
+[alias]
+  st = status
+  w  = whatchanged
+  d = diff
+  ci = commit -v
+  cia = commit -v -a
+  co = checkout
+  cp = cherry-pick
+  l = log
+  ll = log -p
+  lt = log trunk..
+  llt = log -p trunk..
+  lm = log master..
+  llm = log -p master..
+  b = branch
+
+[branch]
+  autosetupmerge = true
