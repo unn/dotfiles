@@ -25,3 +25,6 @@
 
 [branch]
   autosetupmerge = true
+
+[github]
+  user = unn
