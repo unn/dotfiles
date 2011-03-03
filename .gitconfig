@@ -22,9 +22,13 @@
   lm = log master..
   llm = log -p master..
   b = branch
+  a = add
 
 [branch]
   autosetupmerge = true
 
 [github]
   user = unn
+
+[rerere]
+  enabled = true
