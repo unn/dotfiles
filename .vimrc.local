@@ -1,0 +1,23 @@
+set autoindent
+set smartindent
+syntax on
+
+" TextMate style hidden chars
+set list
+set listchars=tab:▸\ ,eol:¬
+
+" Use the damn hjkl keys
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+
+" And make them fucking work, too.
+nnoremap j gj
+nnoremap k gk
+
+cmap w!! w !sudo tee % >/dev/null
+inoremap jj <ESC>
+
+" Shouldn't need shift
+nnoremap ; :
