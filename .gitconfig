@@ -4,8 +4,15 @@
 
 [color]
   diff = auto
-  branch = auto
   status = auto
+  branch = auto
+  interactive = auto
+
+[merge]
+  summary = true
+
+[core]
+  excludesfile = ~/.gitignore
 
 [alias]
   st = status
