@@ -42,3 +42,7 @@
 
 [push]
   default = tracking
+
+[achievement]
+  upload = true
+
