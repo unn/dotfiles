@@ -35,7 +35,7 @@ alias h='history'
 alias j='jobs -l'
 
 # The 'ls' family
-alias ll="ls -l --group-directories-first"
+alias ll="ls -l"
 alias ls='ls -hFG'  # add colors for filetype recognition
 alias la='ls -Al'          # show hidden files
 alias lx='ls -lXB'         # sort by extension
