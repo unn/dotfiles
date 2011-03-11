@@ -30,6 +30,7 @@ fi
 alias git='git-achievements'
 alias ..='cd ..'
 alias cd..='cd ..'
+alias cd ...='cd ../../../'
 alias ...='cd ../../../'
 alias du='du -kh'
 alias df='df -kTh'
