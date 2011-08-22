@@ -13,9 +13,6 @@ export PATH=/Users/david/.gem/ruby/1.8/bin:$PATH
 #git achievements
 export PATH="$PATH:/Users/david/dotfiles/git-achievements"
 
-# Drupal Settings
-export CVSROOT=:pserver:dstol@cvs.drupal.org:/cvs/drupal-contrib
-
 # EOP
 SSH_AGENT_PID=`ps x| grep ssh-agent | grep -v grep | awk '{print $1}'`;
 if [ -n "$SSH_AGENT_PID" ]; then
