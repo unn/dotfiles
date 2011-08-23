@@ -15,7 +15,7 @@
   excludesfile = ~/.gitignore
 
 [alias]
-  st = status
+  st = status -sb 
   w  = whatchanged
   d = diff
   ci = commit -v
