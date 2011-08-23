@@ -102,13 +102,3 @@ cdl() {
 if [ -f /opt/local/etc/bash_completion ]; then
     . /opt/local/etc/bash_completion
 fi
-
-
-##
-# Your previous /Users/david/.bash_profile file was backed up as /Users/david/.bash_profile.macports-saved_2011-02-03_at_14:10:49
-##
-
-# MacPorts Installer addition on 2011-02-03_at_14:10:49: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
