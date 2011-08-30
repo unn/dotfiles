@@ -9,7 +9,6 @@ task :install do
     ignore = ['Rakefile', 'README.rdoc', 'LICENSE'] | Pathname.glob("*/").map { |i| i.basename.to_s }
     next if ignore.include? file
     
-=begin
     if File.exist?(File.join(ENV['HOME'], ".#{file.sub('.erb', '')}"))
       if File.identical? file, File.join(ENV['HOME'], ".#{file.sub('.erb', '')}")
         puts "identical ~/.#{file.sub('.erb', '')}"
@@ -32,7 +31,6 @@ task :install do
     else
       link_file(file)
     end
-=end
   end
 end
 
@@ -52,3 +50,6 @@ def link_file(file)
     system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
   end
 end
+
+task :default => 'install'
+
