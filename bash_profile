@@ -1,8 +1,3 @@
-# use .localrc for settings specific to one system
-if [ -f ~/.localrc ]; then
-  source ~/.localrc
-fi
-
 source ~/dotfiles/bash/paths
 source ~/dotfiles/bash/aliases
 source ~/dotfiles/bash/completions
@@ -17,3 +12,7 @@ else
     ssh-add;
 fi
 
+# use .localrc for settings specific to one system
+if [ -f ~/.localrc ]; then
+  source ~/.localrc
+fi
