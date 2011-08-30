@@ -1,17 +1,11 @@
-# MAMP config
-export PATH=/Applications/MAMP/bin/php5.2/bin:/Applications/MAMP/Library/bin:$PATH
+# use .localrc for settings specific to one system
+if [ -f ~/.localrc ]; then
+  source ~/.localrc
+fi
 
-#memcache
-EVENT_NOKQUEUE=1
-
-# Android SDK
-export PATH=/Users/david/Sites/eclipse/android-sdk-mac_86:$PATH
-
-# Ruby Gems
-export PATH=/Users/david/.gem/ruby/1.8/bin:$PATH
-
-#git achievements
-export PATH="$PATH:/Users/david/dotfiles/git-achievements"
+source ~/dotfiles/bash/paths
+source ~/dotfiles/bash/aliases
+source ~/dotfiles/bash/completions
 
 # EOP
 SSH_AGENT_PID=`ps x| grep ssh-agent | grep -v grep | awk '{print $1}'`;
@@ -23,82 +17,3 @@ else
     ssh-add;
 fi
 
-# Aliases
-alias git='git-achievements'
-alias ..='cd ..'
-alias cd..='cd ..'
-alias cd...='cd ../../../'
-alias ...='cd ../../../'
-alias du='du -kh'
-alias df='df -kTh'
-alias mkdir='mkdir -p'
-alias which='type -a'
-alias h='history'
-alias j='jobs -l'
-
-# The 'ls' family
-alias ll="ls -l"
-alias ls='ls -hFG'  # add colors for filetype recognition
-alias la='ls -Al'          # show hidden files
-alias lx='ls -lB'         # sort by extension
-alias lk='ls -lSr'         # sort by size, biggest last
-alias lc='ls -ltcr'        # sort by and show change time, most recent last
-alias lu='ls -ltur'        # sort by and show access time, most recent last
-alias lt='ls -ltr'         # sort by date, most recent last
-alias lm='ls -al | more'   # pipe through 'more'
-alias lr='ls -lR'          # recursive ls
-alias tree='tree -Csu'     # nice alternative to 'recursive ls'
-
-# Functions
-extract () {
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)  tar xjf $1    ;;
-      *.tar.gz) tar xzf $1    ;;
-      *.bz2)    bunzip2 $1    ;;
-      *.rar)    rar x $1    ;;
-      *.gz)   gunzip $1   ;;
-      *.tar)    tar xf $1   ;;
-      *.tbz2)   tar xjf $1    ;;
-      *.tgz)    tar xzf $1    ;;
-      *.zip)    unzip $1    ;;
-      *.Z)    uncompress $1 ;;
-      *)      echo "'$1' cannot be extracted via extract()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
-}
-
-ziprm () {
-  if [ -f $1 ] ; then
-    unzip $1
-    rm $1
-  else
-    echo "Need a valid zipfile"
-  fi
-}
-
-psgrep() {
-  if [ ! -z $1 ] ; then
-    echo "Grepping for processes matching $1..."
-    ps aux | grep $1 | grep -v grep
-  else
-    echo "!! Need name to grep for"
-  fi
-}
-
-mine() {
-  sudo chown -R ${USER} ${1:-.}
-}
-
-cdl() {
-  if [ "$1" ]
-  then builtin cd "$1" && ll
-  else builtin cd && ll
-  fi
-}
-
-if [ -f /opt/local/etc/bash_completion ]; then
-    . /opt/local/etc/bash_completion
-fi

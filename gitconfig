@@ -12,7 +12,7 @@
   summary = true
 
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = ~/dotfiles/git/gitignore
 
 [alias]
   st = status -sb 
