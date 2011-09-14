@@ -17,7 +17,7 @@
 [alias]
   st = status -sb 
   w  = whatchanged
-  d = diff
+  d = diff --word-diff
   ci = commit -v
   cia = commit -v -a
   co = checkout
