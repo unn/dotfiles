@@ -21,6 +21,7 @@
   ci = commit -v
   cia = commit -v -a
   co = checkout
+  ct = !"sh -c 'git checkout -b $1 origin/$1 --track' -"
   cp = cherry-pick
   l = log
   ll = log -p
