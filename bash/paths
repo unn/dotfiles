@@ -1,12 +1,18 @@
-# MAMP config
-export PATH=/Applications/MAMP/bin/php5.2/bin:/Applications/MAMP/Library/bin:$PATH
+if [ "$OS" == "Darwin" ]; then
+  # MAMP config
+  export PATH=/Applications/MAMP/bin/php5.2/bin:/Applications/MAMP/Library/bin:$PATH
 
-# Android SDK
-export PATH=/Users/david/Sites/eclipse/android-sdk-mac_86:$PATH
+  # Android SDK
+  export PATH=/Users/david/Sites/eclipse/android-sdk-mac_86:$PATH
 
-# Ruby Gems
-export PATH=/Users/david/.gem/ruby/1.8/bin:$PATH
+  # Ruby Gems
+  export PATH=/Users/david/.gem/ruby/1.8/bin:$PATH
 
-# git achievements
-export PATH=/Users/david/dotfiles/repos/git-achievements:$PATH
+  # git achievements
+  export PATH=/Users/david/dotfiles/repos/git-achievements:$PATH
+
+  # homebrew
+  export PATH=/usr/local/bin:$PATH
+
+fi
 

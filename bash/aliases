@@ -1,5 +1,5 @@
 # Aliases
-if [ '${OS}' == 'Darwin' ]; then
+if [ "$OS" == "Darwin" ]; then
   alias git='git-achievements'
 fi
 
