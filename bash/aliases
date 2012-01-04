@@ -80,3 +80,9 @@ cdl() {
   else builtin cd && ll
   fi
 }
+
+alert() {
+  say $1
+  growlnotify -m "$1"
+  echo $'\a'
+}
