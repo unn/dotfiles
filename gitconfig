@@ -21,7 +21,7 @@
   ci = commit -v
   cia = commit -v -a
   co = checkout
-  ct = !"sh -c 'git checkout -b $1 origin/$1 --track' -"
+  ct = "!sh -c 'git checkout -b $1 origin/$1 --track' -"
   #ph = "!sh -c 'git push -u $1 $(git branch --no-color 2> /dev/null | sed -e "/^[^*]/d" -e "s/* \(.*\)/\1/")' -"
   cp = cherry-pick
   l = log
