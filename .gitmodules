@@ -1,6 +1,3 @@
 [submodule "repos/git-tools"]
 	path = repos/git-tools
 	url = git://gitorious.org/willgit/mainline.git
-[submodule "repos/spark"]
-	path = repos/spark
-	url = https://github.com/holman/spark.git
