@@ -17,6 +17,9 @@ bind 'set visible-stats on'
 
 export HISTFILESIZE=10000
 export HISTSIZE=10000
+export EDITOR=vim
+
+shopt -s cdspell
 
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then

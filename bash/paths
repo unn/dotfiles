@@ -8,9 +8,6 @@ if [ "$OS" == "Darwin" ]; then
   # Ruby Gems
   export PATH=/Users/david/.gem/ruby/1.8/bin:$PATH
 
-  # Spark
-  export PATH=/Users/david/dotfiles/repos/spark:$PATH
-
   # git achievements
   export PATH=/Users/david/dotfiles/repos/git-achievements:$PATH
 
