@@ -21,3 +21,5 @@ inoremap jj <ESC>
 
 " Shouldn't need shift
 nnoremap ; :
+
+let g:syntastic_phpcs_conf="--standard=DrupalCodingStandard"
