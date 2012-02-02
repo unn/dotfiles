@@ -1,7 +1,7 @@
 export OS=`uname`
 
-source ~/dotfiles/bash/paths
 source ~/dotfiles/bash/aliases
+source ~/dotfiles/bash/paths
 source ~/dotfiles/bash/completions
 
 bind 'set completion-ignore-case on'

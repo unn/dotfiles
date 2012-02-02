@@ -85,3 +85,20 @@ alert() {
   growlnotify -m "$1"
   echo $'\a'
 }
+
+function path(){
+  old=$IFS
+  IFS=:
+  printf "%s\n" $PATH
+  IFS=$old
+}
+
+pathmunge () {
+  if ! echo $PATH | /usr/bin/grep -E -q "(^|:)$1($|:)" ; then
+     if [ "$2" = "after" ] ; then
+        PATH=$PATH:$1
+     else
+        PATH=$1:$PATH
+     fi
+  fi
+}
