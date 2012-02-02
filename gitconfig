@@ -47,9 +47,6 @@
 [push]
   default = tracking
 
-[achievement]
-  upload = true
-
 [url "ssh://git@git.drupal.org/project/"]
     insteadOf = "drupal:"
 
