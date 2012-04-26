@@ -1,6 +1,6 @@
 # Aliases
 if [ "$OS" == "Darwin" ]; then
-  alias t='~/dotfiles/repos/todo.txt-cli/todo.sh -d ~/dotfiles/repos/todo.txt-cli/todo.cfg'
+  alias todo='~/dotfiles/repos/todo.txt-cli/todo.sh -d ~/dotfiles/repos/todo.txt-cli/todo.cfg'
 fi
 
 alias ..='cd ..'
