@@ -29,7 +29,6 @@ alias lr='ls -lR'        # recursive ls
 alias tree='tree -Csu'   # nice alternative to 'recursive ls'
 
 alias bashsrc='source ~/.bash_profile'
-alias mongostart='mongod run --config /usr/local/Cellar/mongodb/1.8.3-x86_64/mongod.conf'
 
 # Functions
 extract () {

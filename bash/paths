@@ -3,13 +3,17 @@ if [ "$OS" == "Darwin" ]; then
   # homebrew - /usr/local/bin is in /etc/paths
   pathmunge /usr/local/sbin
 
+  # binaries I ship myself
+  pathmunge $HOME/bin
+
   # MAMP config
-  pathmunge /Applications/MAMP/bin/php/php5.2.17/bin
-  pathmunge /Applications/MAMP/Library/bin
+  #pathmunge /Applications/MAMP/bin/php/php5.2.17/bin
+  pathmunge /Applications/MAMP/bin/php/php5.3.14/bin
+  #pathmunge /Applications/MAMP/Library/bin
 
   # Android SDK
-  pathmunge /Users/david/Sites/eclipse/android-sdk-mac_86
+  #pathmunge $HOME/Sites/eclipse/android-sdk-mac_86
 
   # Ruby Gems
-  pathmunge /Users/david/.gem/ruby/1.8/bin
+  pathmunge $HOME/.gem/ruby/1.8/bin
 fi

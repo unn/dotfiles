@@ -17,7 +17,7 @@ nnoremap j gj
 nnoremap k gk
 
 cmap w!! w !sudo tee % >/dev/null
-inoremap jj <ESC>
+inoremap jk <ESC>
 
 " Shouldn't need shift
 nnoremap ; :
