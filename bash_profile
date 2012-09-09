@@ -21,6 +21,12 @@ export EDITOR=vim
 
 shopt -s cdspell
 
+_update_ps1() {
+  export PS1="$($HOME/dotfiles/repos/powerline/powerline-bash.py $?)"
+}
+
+export PROMPT_COMMAND="_update_ps1"
+
 # use .localrc for settings specific to one system
 if [ -f ~/.localrc ]; then
   source ~/.localrc

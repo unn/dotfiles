@@ -86,7 +86,7 @@ alert() {
   echo $'\a'
 }
 
-function path(){
+path(){
   old=$IFS
   IFS=:
   printf "%s\n" $PATH
