@@ -52,4 +52,3 @@ def link_file(file)
 end
 
 task :default => 'install'
-
