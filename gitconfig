@@ -1,6 +1,7 @@
 [user]
   email = drupal@davidstoline.com
   name = David Stoline
+  signingkey = 0D488FCE
 
 [color]
   diff = auto
@@ -15,13 +16,12 @@
   excludesfile = ~/dotfiles/git/gitignore
 
 [alias]
-  st = status -sb 
+  st = status -sb
   w  = whatchanged
   d = diff --word-diff
-  ci = commit -v
-  cia = commit -v -a
+  ci = commit -vS
+  cia = commit -vaS
   co = checkout
-  ct = "!sh -c 'git checkout -b $1 origin/$1 --track' -"
   cp = cherry-pick
   l = log
   ll = log -p
