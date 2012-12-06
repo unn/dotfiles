@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sudo softwareupdate -i -a
+sudo gem update --system
+sudo gem update
+brew update && brew upgrade `brew outdated`
+if [[ -n $1 ]]; then
+  open -a Bodega
+  open -a AppFresh
+  open -a App\ Store
+fi

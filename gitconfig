@@ -15,6 +15,7 @@
 
 [core]
   excludesfile = ~/dotfiles/git/gitignore
+  pager = less -r
 
 [alias]
   st = status -sb
