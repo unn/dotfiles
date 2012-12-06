@@ -8,6 +8,7 @@
   status = auto
   branch = auto
   interactive = auto
+  ui = 1
 
 [merge]
   summary = true
@@ -41,10 +42,14 @@
   user = unn
 
 [rerere]
-  enabled = true
+  enabled = 1
 
 [push]
   default = tracking
 
 [url "ssh://git@git.drupal.org/project/"]
     insteadOf = "drupal:"
+[credential]
+  helper = osxkeychain
+[help]
+  autocorrect = 1
