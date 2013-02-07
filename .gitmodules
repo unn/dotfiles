@@ -3,4 +3,4 @@
 	url = git://gitorious.org/willgit/mainline.git
 [submodule "repos/powerline"]
 	path = repos/powerline
-	url = git://github.com/milkbikis/powerline-bash.git
+	url = git://github.com/milkbikis/powerline-shell.git

@@ -22,7 +22,7 @@ export EDITOR=vim
 shopt -s cdspell
 
 _update_ps1() {
-  export PS1="$($HOME/dotfiles/repos/powerline/powerline-bash.py $?)"
+  export PS1="$($HOME/dotfiles/repos/powerline/powerline-shell.py $?)"
 }
 
 export PROMPT_COMMAND="_update_ps1"

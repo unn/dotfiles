@@ -13,6 +13,9 @@ if [ "$OS" == "Darwin" ]; then
 
   # Ruby Gems
   pathmunge $HOME/.gem/ruby/1.8/bin
+
+  # NPM
+  pathmunge /usr/local/share/npm/bin
 fi
 
 # binaries I ship myself
