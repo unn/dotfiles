@@ -4,3 +4,6 @@
 [submodule "repos/powerline"]
 	path = repos/powerline
 	url = git://github.com/milkbikis/powerline-shell.git
+[submodule "repo/solarized"]
+	path = repo/solarized
+	url = git://github.com/altercation/solarized.git
