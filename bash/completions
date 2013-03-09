@@ -4,4 +4,9 @@ fi
 
 complete -W "$(echo `grep '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' /etc/hosts | awk '{print $2}'`;)" ssh
 
+# Jason Friedland SSH Known Hosts Autocomplet - http://blog.friedland.id.au/2009/04/ssh-hostname-autocomplete.html
+complete -W "$(echo $(cat ~/.ssh/known_hosts | \
+    cut -f 1 -d ' ' | sed -e s/,.*//g | \
+    sort -u | grep -v "\["))" ssh
+
 source ~/dotfiles/bash/bash_drush
