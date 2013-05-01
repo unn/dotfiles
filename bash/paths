@@ -9,7 +9,7 @@ if [ "$OS" == "Darwin" ]; then
   #pathmunge /Applications/MAMP/Library/bin
 
 
-  pathmunge ~/.rvm/scripts/rvm
+  source ~/.rvm/scripts/rvm
 fi
 
 # binaries I ship myself
