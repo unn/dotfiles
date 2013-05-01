@@ -5,17 +5,11 @@ if [ "$OS" == "Darwin" ]; then
 
   # MAMP config
   #pathmunge /Applications/MAMP/bin/php/php5.2.17/bin
-  pathmunge /Applications/MAMP/bin/php/php5.3.14/bin
+  #pathmunge /Applications/MAMP/bin/php/php5.3.14/bin
   #pathmunge /Applications/MAMP/Library/bin
 
-  # Android SDK
-  #pathmunge $HOME/Sites/eclipse/android-sdk-mac_86
 
-  # Ruby Gems
-  pathmunge $HOME/.gem/ruby/1.8/bin
-
-  # NPM
-  pathmunge /usr/local/share/npm/bin
+  pathmunge ~/.rvm/scripts/rvm
 fi
 
 # binaries I ship myself

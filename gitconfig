@@ -54,3 +54,5 @@
   helper = osxkeychain
 [help]
   autocorrect = 1
+[diff]
+	algorithm = patience
