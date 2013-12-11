@@ -8,7 +8,6 @@ if [ "$OS" == "Darwin" ]; then
   #pathmunge /Applications/MAMP/bin/php/php5.3.14/bin
   #pathmunge /Applications/MAMP/Library/bin
 
-  source ~/.rvm/scripts/rvm
 fi
 
 # binaries I ship myself

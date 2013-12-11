@@ -15,7 +15,7 @@
 
 [core]
   excludesfile = ~/dotfiles/git/gitignore
-  pager = less -r
+  pager = less -+$LESS -FRXS
 
 [alias]
   st = status -sb
@@ -55,4 +55,4 @@
 [help]
   autocorrect = 1
 [diff]
-	algorithm = patience
+  algorithm = patience

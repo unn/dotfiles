@@ -1,0 +1,4 @@
+--type-add=css=scss
+--type-add=php=.module,.install,.engine,.inc,.profile,.test
+--noheading
+--break

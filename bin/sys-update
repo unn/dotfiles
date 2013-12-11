@@ -3,7 +3,7 @@
 sudo softwareupdate -i -a
 sudo gem update --system
 sudo gem update
-brew update && brew upgrade `brew outdated`
+brew update && brew upgrade `brew outdated` && brew cleanup
 if [[ -n $1 ]]; then
   open -a Bodega
   open -a AppFresh
