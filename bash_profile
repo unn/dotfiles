@@ -1,3 +1,4 @@
+source ~/.profile
 export OS=`uname`
 
 source ~/dotfiles/bash/aliases
