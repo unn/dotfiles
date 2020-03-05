@@ -1,0 +1,18 @@
+# homebrew - /usr/local/bin is in /etc/paths
+pathmunge /usr/local/sbin
+
+# MAMP config
+pathmunge /Applications/MAMP/bin/php/php7.3.9/bin
+pathmunge /Applications/MAMP/Library/bin
+
+# binaries I ship myself
+pathmunge $HOME/bin
+
+export GOPATH=~/go
+pathmunge $GOPATH/bin
+pathmunge $HOME/.composer/vendor/bin
+
+# Homebrew completions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi

@@ -1,24 +1,15 @@
-# Aliases
-if [ "$OS" == "Darwin" ]; then
-  alias todo='~/dotfiles/repos/todo.txt-cli/todo.sh -d ~/dotfiles/repos/todo.txt-cli/todo.cfg'
-fi
-
-alias ..='cd ..'
 alias cd..='cd ..'
 alias cd...='cd ../../../'
-alias ...='cd ../../../'
 alias du='du -kh'
 alias df='df -kTh'
 alias mkdir='mkdir -p'
 alias which='type -a'
 alias h='history'
 alias j='jobs -l'
+alias k='kubectl'
+alias tree='tree -CspugD'   # nice alternative to 'recursive ls'
 alias akcurl='curl -I -H "Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no"'
 
-# The 'ls' family
-alias ll="ls -l"
-alias ls='ls -hFG'       # add colors for filetype recognition
-alias la='ls -Al'        # show hidden files
 alias lx='ls -lB'        # sort by extension
 alias lk='ls -lSr'       # sort by size, biggest last
 alias lc='ls -ltcr'      # sort by and show change time, most recent last
@@ -26,9 +17,6 @@ alias lu='ls -ltur'      # sort by and show access time, most recent last
 alias lt='ls -ltr'       # sort by date, most recent last
 alias lm='ls -al | more' # pipe through 'more'
 alias lr='ls -lR'        # recursive ls
-alias tree='tree -CspugD'   # nice alternative to 'recursive ls'
-
-alias bashsrc='source ~/.bash_profile'
 
 # Functions
 extract () {
@@ -65,23 +53,17 @@ mine() {
 }
 
 cdl() {
-  if [ "$1" ]
-  then builtin cd "$1" && ll
-  else builtin cd && ll
+  if [ "$1" ] ; then
+    builtin cd "$1" && ls -lh
+  else
+    builtin cd && ls -lh
   fi
 }
 
-alert() {
-  say $1
-  growlnotify -m "$1"
-  echo $'\a'
-}
-
-path(){
-  old=$IFS
-  IFS=:
-  printf "%s\n" $PATH
-  IFS=$old
+cdr() {
+  if [ "`git rev-parse --show-cdup`" != "" ] ; then
+    cd `git rev-parse --show-cdup`;
+  fi
 }
 
 pathmunge () {

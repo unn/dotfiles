@@ -35,6 +35,7 @@
   b = branch
   a = add
   wtf = !~/dotfiles/repos/git-tools/bin/git-wtf
+  root = !pwd
 
 [branch]
   autosetupmerge = true

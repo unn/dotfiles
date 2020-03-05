@@ -1,9 +1,3 @@
-[submodule "repos/git-tools"]
-	path = repos/git-tools
-	url = git://gitorious.org/willgit/mainline.git
-[submodule "repos/powerline"]
-	path = repos/powerline
-	url = git://github.com/milkbikis/powerline-shell.git
 [submodule "repos/solarized"]
 	path = repos/solarized
 	url = git://github.com/altercation/solarized.git
