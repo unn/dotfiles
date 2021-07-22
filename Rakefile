@@ -7,7 +7,7 @@ task :install do
   replace_all = false
   Dir.children('.').each do |file|
     ignore = ['Rakefile', 'README.md', 'LICENSE', '.gitmodules', '.git',
-  '.DS_Store'] | Pathname.glob("*/").map { |i| i.basename.to_s }
+  '.DS_Store', '.gitignore'] | Pathname.glob("*/").map { |i| i.basename.to_s }
     next if ignore.include? file
 
     if File.exist?(File.join(ENV['HOME'], "#{file.sub('.erb', '')}"))
