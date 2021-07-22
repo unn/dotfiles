@@ -2,8 +2,10 @@
 pathmunge /usr/local/sbin
 
 # MAMP config
-pathmunge /Applications/MAMP/bin/php/php7.3.9/bin
-pathmunge /Applications/MAMP/Library/bin
+#pathmunge /Applications/MAMP/bin/php/php7.3.9/bin
+
+#pathmunge /Applications/MAMP/bin/php/php7.4.2/bin
+#pathmunge /Applications/MAMP/Library/bin
 
 # binaries I ship myself
 pathmunge $HOME/bin

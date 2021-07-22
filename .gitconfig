@@ -1,6 +1,6 @@
 [user]
-  email = drupal@davidstoline.com
-  name = David Stoline
+	email = drupal@davidstoline.com
+	name = David Stoline
   signingkey = 0D488FCE
 
 [color]
@@ -61,3 +61,7 @@
 	insteadOf = https://github.com/
 [commit]
 	gpgsign = true
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
