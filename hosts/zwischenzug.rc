@@ -20,8 +20,9 @@ export DDEV_LIVE_NO_ANALYTICS=true
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 P9K_COLOR_SCHEME='light'
-P9K_CUSTOM_KUBE_PS1='kube_ps1'
-P9K_LEFT_PROMPT_ELEMENTS=(dir custom_kube_ps1 vcs status)
+#P9K_CUSTOM_KUBE_PS1='kube_ps1'
+#P9K_LEFT_PROMPT_ELEMENTS=(dir custom_kube_ps1 vcs status)
+P9K_LEFT_PROMPT_ELEMENTS=(dir vcs status)
 P9K_DISABLE_RPROMPT=true
 P9K_RIGHT_PROMPT_ELEMENTS=(root_indicator kubecontext)
 P9K_DIR_SHORTEN_LENGTH=2
@@ -74,6 +75,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions kube-ps1)
+#plugins=(zsh-autosuggestions kube-ps1)
+plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
